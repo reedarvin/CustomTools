@@ -1,0 +1,28 @@
+#
+# The commands entered below will be sent to the target host.
+#
+# Example:
+#
+# HEAD / HTTP/1.0\r\n
+#
+# Other Notes:
+#
+# - %IP% will be replaced with the current IP address.
+# - \r\n will be replaced with an actual carriage return.
+#
+#############################################################
+
+<mytelnetpassword>
+enable
+<myenablepassword>
+copy running-config tftp
+10.10.10.10
+%IP%.CiscoConfig
+\r\n
+\r\n
+\r\n
+\r\n
+exit
+
+# term len 0
+# show run

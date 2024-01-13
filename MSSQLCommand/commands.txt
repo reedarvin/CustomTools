@@ -1,0 +1,7 @@
+#
+# The commands entered below will be run on the target host.
+#
+############################################################
+
+net user
+ipconfig /all

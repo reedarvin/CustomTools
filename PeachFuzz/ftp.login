@@ -1,0 +1,3 @@
+USER:hello
+PASS:moto
+PORT:127,0,0,1,15,15

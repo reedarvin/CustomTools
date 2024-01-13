@@ -1,0 +1,100 @@
+﻿  d3des.c
+  getopt.c
+  WinScanX.c
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(1): warning C4005: 'CreateDirectory': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\fileapi.h(73): note: see previous definition of 'CreateDirectory'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(2): warning C4005: 'FormatMessage': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winbase.h(2415): note: see previous definition of 'FormatMessage'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(3): warning C4005: 'CopyFile': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winbase.h(5336): note: see previous definition of 'CopyFile'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(4): warning C4005: 'DeleteFile': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\fileapi.h(151): note: see previous definition of 'DeleteFile'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(5): warning C4005: 'LoadLibrary': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\libloaderapi.h(670): note: see previous definition of 'LoadLibrary'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(6): warning C4005: 'DsEnumerateDomainTrusts': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\dsgetdc.h(459): note: see previous definition of 'DsEnumerateDomainTrusts'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(7): warning C4005: 'ldap_init': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(621): note: see previous definition of 'ldap_init'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(8): warning C4005: 'ldap_search': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(1109): note: see previous definition of 'ldap_search'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(9): warning C4005: 'ldap_first_attribute': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2029): note: see previous definition of 'ldap_first_attribute'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(10): warning C4005: 'ldap_get_values': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2096): note: see previous definition of 'ldap_get_values'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(11): warning C4005: 'ldap_count_values': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2157): note: see previous definition of 'ldap_count_values'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(12): warning C4005: 'ldap_value_free': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2182): note: see previous definition of 'ldap_value_free'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(13): warning C4005: 'ldap_memfree': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2268): note: see previous definition of 'ldap_memfree'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(14): warning C4005: 'ldap_next_attribute': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winldap.h(2060): note: see previous definition of 'ldap_next_attribute'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(15): warning C4005: 'RegConnectRegistry': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(277): note: see previous definition of 'RegConnectRegistry'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(16): warning C4005: 'RegOpenKeyEx': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(712): note: see previous definition of 'RegOpenKeyEx'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(17): warning C4005: 'RegEnumKey': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(539): note: see previous definition of 'RegEnumKey'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(18): warning C4005: 'RegQueryValueEx': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(870): note: see previous definition of 'RegQueryValueEx'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(19): warning C4005: 'ConvertStringSidToSid': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\sddl.h(303): note: see previous definition of 'ConvertStringSidToSid'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(20): warning C4005: 'LookupAccountSid': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winbase.h(6756): note: see previous definition of 'LookupAccountSid'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(21): warning C4005: 'GetFileVersionInfoSize': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winver.h(129): note: see previous definition of 'GetFileVersionInfoSize'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(22): warning C4005: 'GetFileVersionInfo': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winver.h(153): note: see previous definition of 'GetFileVersionInfo'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(23): warning C4005: 'VerQueryValue': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winver.h(250): note: see previous definition of 'VerQueryValue'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(24): warning C4005: 'FindFirstFile': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\fileapi.h(247): note: see previous definition of 'FindFirstFile'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(25): warning C4005: 'FindNextFile': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\fileapi.h(336): note: see previous definition of 'FindNextFile'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(26): warning C4005: 'OpenSCManager': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsvc.h(1370): note: see previous definition of 'OpenSCManager'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(27): warning C4005: 'EnumServicesStatus': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsvc.h(1218): note: see previous definition of 'EnumServicesStatus'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(28): warning C4005: 'OpenService': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsvc.h(1394): note: see previous definition of 'OpenService'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(29): warning C4005: 'QueryServiceConfig': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsvc.h(1422): note: see previous definition of 'QueryServiceConfig'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(30): warning C4005: 'QueryServiceConfig2': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsvc.h(1466): note: see previous definition of 'QueryServiceConfig2'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(31): warning C4005: 'GetNamedSecurityInfo': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\aclapi.h(186): note: see previous definition of 'GetNamedSecurityInfo'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(32): warning C4005: 'RegEnumValue': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(607): note: see previous definition of 'RegEnumValue'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(33): warning C4005: 'ConvertSidToStringSid': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\sddl.h(281): note: see previous definition of 'ConvertSidToStringSid'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(34): warning C4005: 'RegCreateKeyEx': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(359): note: see previous definition of 'RegCreateKeyEx'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(35): warning C4005: 'RegSaveKey': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winreg.h(953): note: see previous definition of 'RegSaveKey'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(36): warning C4005: 'MoveFile': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winbase.h(5619): note: see previous definition of 'MoveFile'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.h(38): warning C4005: 'DS_DOMAIN_TRUSTS': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\dsgetdc.h(431): note: see previous definition of 'DS_DOMAIN_TRUSTS'
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(1581): warning C4267: 'function': conversion from 'size_t' to 'WORD', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(2196): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(2197): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(2874): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(2875): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5756): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'LPWSTR'
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5756): note: consider using '%ls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5756): note: consider using '%lls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5756): note: consider using '%Ls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5756): note: consider using '%ws' in the format string
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5803): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'LPWSTR'
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5803): note: consider using '%ls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5803): note: consider using '%lls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5803): note: consider using '%Ls' in the format string
+  c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(5803): note: consider using '%ws' in the format string
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7225): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7226): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7305): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7306): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7332): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+c:\users\reedarvin\source\repos\winscanx project\winscanx\winscanx.c(7333): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+  Generating Code...
+  WinScanX.vcxproj -> C:\Users\reedarvin\source\repos\WinScanX Project\Debug\WinScanX.exe

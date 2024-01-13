@@ -1,0 +1,14 @@
+# Default Sybase user account names and passwords
+
+sa:<blank>
+sa:sasasa
+probe:<blank>
+mon_user:<blank>
+mon_user:mon_user
+DBA:SQL
+jagadmin:<blank>
+jagadmin:rdrpswd
+pso:123qwe
+entldbdbo:dbopswd
+entldbreader:rdrpswd
+operator:operator

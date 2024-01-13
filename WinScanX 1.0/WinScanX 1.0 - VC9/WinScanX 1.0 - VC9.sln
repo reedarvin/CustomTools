@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinScanX 1.0 - VC9", "WinScanX 1.0 - VC9\WinScanX 1.0 - VC9.vcproj", "{E5A9C62A-0497-4A73-8BA0-A672491F6DAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5A9C62A-0497-4A73-8BA0-A672491F6DAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5A9C62A-0497-4A73-8BA0-A672491F6DAC}.Debug|Win32.Build.0 = Debug|Win32
+		{E5A9C62A-0497-4A73-8BA0-A672491F6DAC}.Release|Win32.ActiveCfg = Release|Win32
+		{E5A9C62A-0497-4A73-8BA0-A672491F6DAC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
