@@ -1,0 +1,5 @@
+# Sybase query strings
+
+SELECT * FROM master..syslogins
+SELECT * FROM master..sysdatabases
+SELECT master..sysconfigures.name, master..syscurconfigs.value, master..syscurconfigs.value2 FROM master..sysconfigures, master..syscurconfigs WHERE master..sysconfigures.config = master..syscurconfigs.config

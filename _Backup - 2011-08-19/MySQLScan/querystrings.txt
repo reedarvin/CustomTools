@@ -1,0 +1,4 @@
+# MySQL Server query strings
+
+SELECT * FROM mysql.user
+SELECT * FROM mysql.db

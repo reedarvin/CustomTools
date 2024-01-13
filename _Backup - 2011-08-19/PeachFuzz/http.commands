@@ -1,0 +1,44 @@
+GET / $$$.html HTTP/1.0\r\n
+HEAD / $$$.html HTTP/1.0\r\n
+POST / $$$.html HTTP/1.0\r\n
+OPTIONS / $$$.html HTTP/1.0\r\n
+PUT / $$$.html HTTP/1.0\r\n
+DELETE / $$$.html HTTP/1.0\r\n
+TRACE / $$$.html HTTP/1.0\r\n
+CONNECT / $$$.html HTTP/1.0\r\n
+
+GET / $$$.html HTTP/1.1\r\n
+HEAD / $$$.html HTTP/1.1\r\n
+POST / $$$.html HTTP/1.1\r\n
+OPTIONS / $$$.html HTTP/1.1\r\n
+PUT / $$$.html HTTP/1.1\r\n
+DELETE / $$$.html HTTP/1.1\r\n
+TRACE / $$$.html HTTP/1.1\r\n
+CONNECT / $$$.html HTTP/1.1\r\n
+
+GET / $$$.cgi HTTP/1.0\r\n
+HEAD / $$$.cgi HTTP/1.0\r\n
+POST / $$$.cgi HTTP/1.0\r\n
+OPTIONS / $$$.cgi HTTP/1.0\r\n
+PUT / $$$.cgi HTTP/1.0\r\n
+DELETE / $$$.cgi HTTP/1.0\r\n
+TRACE / $$$.cgi HTTP/1.0\r\n
+CONNECT / $$$.cgi HTTP/1.0\r\n
+
+GET / $$$.cgi HTTP/1.1\r\n
+HEAD / $$$.cgi HTTP/1.1\r\n
+POST / $$$.cgi HTTP/1.1\r\n
+OPTIONS / $$$.cgi HTTP/1.1\r\n
+PUT / $$$.cgi HTTP/1.1\r\n
+DELETE / $$$.cgi HTTP/1.1\r\n
+TRACE / $$$.cgi HTTP/1.1\r\n
+CONNECT / $$$.cgi HTTP/1.1\r\n
+
+GET / HTTP/1.$$$\r\n
+HEAD / HTTP/1.$$$\r\n
+POST / HTTP/1.$$$\r\n
+OPTIONS / HTTP/1.$$$\r\n
+PUT / HTTP/1.$$$\r\n
+DELETE / HTTP/1.$$$\r\n
+TRACE / HTTP/1.$$$\r\n
+CONNECT / HTTP/1.$$$\r\n

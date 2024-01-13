@@ -1,0 +1,21 @@
+#
+# The commands entered below will be sent to the target host.
+#
+# Example:
+#
+# HEAD / HTTP/1.0\r\n
+#
+# Other Notes:
+#
+# - %IP% will be replaced with the current IP address.
+# - \r\n will be replaced with an actual carriage return.
+#
+#############################################################
+
+USER anonymous
+PASS me@moto.com
+\r\n
+\r\n
+\r\n
+\r\n
+QUIT

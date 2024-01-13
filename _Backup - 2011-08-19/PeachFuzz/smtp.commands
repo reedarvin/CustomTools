@@ -1,0 +1,67 @@
+HELO $$$
+HELO $$$ $$$
+HELO $$$.$$$
+HELO $$$.com
+HELO com.$$$
+HELO $$$.$$$ $$$
+HELO $$$.com $$$
+HELO com.$$$ $$$
+
+MAIL FROM:$$$
+MAIL FROM:$$$ $$$
+MAIL FROM:<@$$$.com,@$$$.com:$$$@$$$.com>
+MAIL FROM:<@$$$.com,@$$$.com:$$$@$$$.com> $$$
+MAIL FROM:<@com.$$$,@com.$$$:$$$@com.$$$>
+MAIL FROM:<@com.$$$,@com.$$$:$$$@com.$$$> $$$
+
+RCPT TO:$$$
+RCPT TO:$$$ $$$
+RCPT TO:<@$$$.com,@$$$.com:$$$@$$$.com>
+RCPT TO:<@$$$.com,@$$$.com:$$$@$$$.com> $$$
+RCPT TO:<@com.$$$,@com.$$$:$$$@com.$$$>
+RCPT TO:<@com.$$$,@com.$$$:$$$@com.$$$> $$$
+
+DATA $$$
+DATA $$$ $$$
+
+RSET $$$
+RSET $$$ $$$
+
+SEND FROM:$$$
+SEND FROM:$$$ $$$
+SEND FROM:<@$$$.com,@$$$.com:$$$@$$$.com>
+SEND FROM:<@$$$.com,@$$$.com:$$$@$$$.com> $$$
+SEND FROM:<@com.$$$,@com.$$$:$$$@com.$$$>
+SEND FROM:<@com.$$$,@com.$$$:$$$@com.$$$> $$$
+
+SOML FROM:$$$
+SOML FROM:$$$ $$$
+SOML FROM:<@$$$.com,@$$$.com:$$$@$$$.com>
+SOML FROM:<@$$$.com,@$$$.com:$$$@$$$.com> $$$
+SOML FROM:<@com.$$$,@com.$$$:$$$@com.$$$>
+SOML FROM:<@com.$$$,@com.$$$:$$$@com.$$$> $$$
+
+SAML FROM:$$$
+SAML FROM:$$$ $$$
+SAML FROM:<@$$$.com,@$$$.com:$$$@$$$.com>
+SAML FROM:<@$$$.com,@$$$.com:$$$@$$$.com> $$$
+SAML FROM:<@com.$$$,@com.$$$:$$$@com.$$$>
+SAML FROM:<@com.$$$,@com.$$$:$$$@com.$$$> $$$
+
+VRFY $$$
+VRFY $$$ $$$
+
+EXPN $$$
+EXPN $$$ $$$
+
+HELP $$$
+HELP $$$ $$$
+
+NOOP $$$
+NOOP $$$ $$$
+
+QUIT $$$
+QUIT $$$ $$$
+
+TURN $$$
+TURN $$$ $$$

@@ -1,0 +1,8 @@
+# Default MS SQL Server username/password combinations
+
+sa:<blank>
+sa:sa
+admin:<blank>
+admin:admin
+probe:<blank>
+probe:probe

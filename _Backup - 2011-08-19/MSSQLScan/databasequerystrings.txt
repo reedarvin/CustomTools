@@ -1,0 +1,7 @@
+# MS SQL Server per database query strings
+
+EXEC %DATABASE%..sp_helpfile;
+EXEC %DATABASE%..sp_helpuser;
+EXEC %DATABASE%..sp_helprole;
+EXEC %DATABASE%..sp_helprolemember;
+EXEC %DATABASE%..sp_helprotect;

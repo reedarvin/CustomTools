@@ -1,0 +1,17 @@
+#
+# The text entered below will be sent to the connecting client.
+#
+# Example:
+#
+# Sun OS 5.8\r\n\r\nlogin: 
+# password: 
+#
+# Other Notes:
+#
+# - \r\n will be replaced with an actual carriage return.
+#
+###############################################################
+
+Sun OS 5.8\r\n\r\nlogin: 
+password: 
+\r\nroot@sunprod1:~# 

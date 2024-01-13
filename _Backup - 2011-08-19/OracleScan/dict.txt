@@ -1,0 +1,7 @@
+# Password guessing dictionary
+#
+# <username>  -- username with casing intact
+# <blank>     -- no password
+
+<username>
+ORACLE

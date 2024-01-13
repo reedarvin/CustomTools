@@ -1,0 +1,17 @@
+1. Copy WinTrack.dll to %WINDIR%\system32
+
+2. Edit the following registry key:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\
+
+Key:   AppInit_DLLs
+Value: WinTrack.dll
+
+NOTE: If there is already a file listed as the value append a space and
+then WinTrack.dll at the end of the string.
+
+Value: PGPmapih.dll WinTrack.dll
+
+3. Launch any application and verify that the log file was created:
+
+C:\WinTrack-Activity.log

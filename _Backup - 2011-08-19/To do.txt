@@ -1,0 +1,11 @@
+- Cache folders -- auto create.
+- fgets application updates -- Split() Replace() Trim().
+- Database application updates -- match MSSQLScan.
+- Canaudit GUI application updates -- progress bar updates.
+- Tool registration functionality -- product keys.
+- Command line arguments -- make case insensitive.
+
+Add RegQueryInfo to CanScan.
+Fix Remote... tools.
+Add ability to stop tools and resume.
+Fix Godzilla

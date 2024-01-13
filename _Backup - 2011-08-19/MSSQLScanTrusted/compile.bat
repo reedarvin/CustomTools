@@ -1,0 +1,1 @@
+gcc MSSQLScanTrusted.c -o MSSQLScanTrusted.exe -lodbc32

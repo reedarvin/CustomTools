@@ -1,0 +1,124 @@
+USER $$$
+USER $$$ $$$
+
+PASS $$$
+PASS $$$ $$$
+
+ACCT $$$
+ACCT $$$ $$$
+
+CWD $$$
+CWD $$$ $$$
+
+CDUP $$$
+CDUP $$$ $$$
+
+SMNT $$$
+SMNT $$$ $$$
+
+QUIT $$$
+QUIT $$$ $$$
+
+REIN $$$
+REIN $$$ $$$
+
+PORT $$$
+PORT $$$ $$$
+PORT $$$,$$$,$$$,$$$,$$$,$$$
+PORT $$$,$$$,$$$,$$$,$$$,$$$ $$$
+
+PASV $$$
+PASV $$$ $$$
+
+TYPE $$$
+TYPE $$$ $$$
+TYPE A $$$
+TYPE A N $$$
+TYPE A T $$$
+TYPE A C $$$
+TYPE E $$$
+TYPE E N $$$
+TYPE E T $$$
+TYPE E C $$$
+TYPE I $$$
+TYPE L $$$
+TYPE L $$$ $$$
+
+STRU $$$
+STRU $$$ $$$
+STRU F $$$
+STRU R $$$
+STRU P $$$
+
+MODE $$$
+MODE $$$ $$$
+MODE S $$$
+MODE B $$$
+MODE C $$$
+
+RETR $$$
+RETR $$$ $$$
+
+STOR $$$
+STOR $$$ $$$
+
+STOU $$$
+STOU $$$ $$$
+
+APPE $$$
+APPE $$$ $$$
+
+ALLO $$$
+ALLO $$$ $$$
+ALLO $$$ $$$ $$$
+ALLO $$$ $$$ $$$ $$$
+ALLO 1 $$$
+ALLO 1 $$$ $$$
+ALLO 1 R $$$
+ALLO 1 R $$$ $$$
+ALLO 1 R 1 $$$
+
+REST $$$
+REST $$$ $$$
+
+RNFR $$$
+RNFR $$$ $$$
+
+RNTO $$$
+RNTO $$$ $$$
+
+ABOR $$$
+ABOR $$$ $$$
+
+DELE $$$
+DELE $$$ $$$
+
+RMD $$$
+RMD $$$ $$$
+
+MKD $$$
+MKD $$$ $$$
+
+PWD $$$
+PWD $$$ $$$
+
+LIST $$$
+LIST $$$ $$$
+
+NLST $$$
+NLST $$$ $$$
+
+SITE $$$
+SITE $$$ $$$
+
+SYST $$$
+SYST $$$ $$$
+
+STAT $$$
+STAT $$$ $$$
+
+HELP $$$
+HELP $$$ $$$
+
+NOOP $$$
+NOOP $$$ $$$

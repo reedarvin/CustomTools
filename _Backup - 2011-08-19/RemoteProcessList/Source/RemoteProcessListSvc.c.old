@@ -1,0 +1,266 @@
+//
+// gcc -c RemoteProcessListSvc.c -o RemoteProcessListSvc.exe
+//
+
+#include <windows.h>
+#include <tlhelp32.h>
+#include <string.h>
+#include <stdio.h>
+
+INT WINAPI              ServiceMain( VOID );
+VOID WINAPI    MyServiceCtrlHandler( DWORD dwOption );
+DWORD                GetProcessInfo( VOID );
+VOID        GetTokenUserInformation( HANDLE *hToken, CHAR *szUsername, DWORD *dwPID );
+VOID                WriteToErrorLog( CHAR *szErrorMsg );
+
+SERVICE_STATUS        MyServiceStatus;
+SERVICE_STATUS_HANDLE MyServiceStatusHandle;
+
+INT main( INT argc, CHAR *argv[] )
+{
+	SERVICE_TABLE_ENTRY DispatchTable[] = { { "RemoteProcessListSvc", (LPSERVICE_MAIN_FUNCTION)ServiceMain }, { NULL, NULL } };
+
+	StartServiceCtrlDispatcher( DispatchTable );
+
+	return 0;
+}
+
+INT WINAPI ServiceMain( VOID )
+{
+	MyServiceStatus.dwServiceType             = SERVICE_WIN32;
+	MyServiceStatus.dwCurrentState            = SERVICE_STOP;
+	MyServiceStatus.dwControlsAccepted        = SERVICE_ACCEPT_STOP | SERVICE_ACCEPT_PAUSE_CONTINUE;
+	MyServiceStatus.dwWin32ExitCode           = 0;
+	MyServiceStatus.dwServiceSpecificExitCode = 0;
+	MyServiceStatus.dwCheckPoint              = 0;
+	MyServiceStatus.dwWaitHint                = 0;
+
+	MyServiceStatusHandle = RegisterServiceCtrlHandler( "RemoteProcessListSvc", MyServiceCtrlHandler );
+
+	if ( MyServiceStatusHandle != 0 )
+	{
+		MyServiceStatus.dwCurrentState = SERVICE_START_PENDING;
+
+		if ( SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus ) )
+		{
+			MyServiceStatus.dwCurrentState = SERVICE_RUNNING;
+ 
+			if ( SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus ) )
+			{
+				GetProcessInfo();
+			}
+		}
+	}
+
+	MyServiceStatus.dwCurrentState = SERVICE_STOP_PENDING;
+
+	if ( SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus ) )
+	{
+		MyServiceStatus.dwCurrentState = SERVICE_ACCEPT_STOP;
+
+		SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus );
+	}
+
+	return 0;
+}
+
+VOID WINAPI MyServiceCtrlHandler( DWORD dwOption )
+{ 
+	switch ( dwOption )
+	{
+		case SERVICE_CONTROL_PAUSE:
+			MyServiceStatus.dwCurrentState = SERVICE_PAUSED;
+
+			SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus );
+
+			break;
+
+		case SERVICE_CONTROL_CONTINUE:
+			MyServiceStatus.dwCurrentState = SERVICE_RUNNING;
+
+			SetServiceStatus( MyServiceStatusHandle, &MyServiceStatus );
+
+			break;
+ 
+		case SERVICE_CONTROL_STOP:
+			break;
+
+		case SERVICE_CONTROL_INTERROGATE:
+			break;
+
+		default:
+			break;
+	}
+}
+
+DWORD GetProcessInfo( VOID )
+{
+	HANDLE          hProcessSnap;
+	PROCESSENTRY32          pe32;
+	DWORD            dwProcessID;
+	CHAR           szProcessName[ 256 ];
+	HANDLE              hProcess;
+	HANDLE                hToken;
+	CHAR              szUsername[ 256 ];
+	FILE            *pOutputFile;
+	CHAR              szErrorMsg[ 128 ];
+
+	hProcessSnap = CreateToolhelp32Snapshot( TH32CS_SNAPPROCESS, 0 );
+
+	if ( hProcessSnap != INVALID_HANDLE_VALUE )
+	{
+		pe32.dwSize = sizeof( PROCESSENTRY32 );
+
+		if ( Process32First( hProcessSnap, &pe32 ) )
+		{
+			do
+			{
+				dwProcessID = pe32.th32ProcessID;
+
+				strcpy( szProcessName, pe32.szExeFile );
+
+				hProcess = OpenProcess( PROCESS_ALL_ACCESS, FALSE, dwProcessID );
+
+				if ( hProcess != NULL )
+				{
+					if ( OpenProcessToken( hProcess, TOKEN_ALL_ACCESS, &hToken ) )
+					{
+						strcpy( szUsername, "" );
+
+						GetTokenUserInformation( &hToken, szUsername, &dwProcessID );
+
+						pOutputFile = fopen( "ProcessList.txt", "r" );
+
+						if ( pOutputFile != NULL )
+						{
+							fclose( pOutputFile );
+						}
+						else
+						{
+							pOutputFile = fopen( "ProcessList.txt", "w" );
+
+							if ( pOutputFile != NULL )
+							{
+								fprintf( pOutputFile, "NOTE: This file is tab separated. Open with Excel to view and sort information.\n" );
+								fprintf( pOutputFile, "\n" );
+								fprintf( pOutputFile, "Process ID\tProcess Name\tRunning As User\n" );
+
+								fclose( pOutputFile );
+							}
+						}
+
+						pOutputFile = fopen( "ProcessList.txt", "a+" );
+
+						if ( pOutputFile != NULL )
+						{
+							fprintf( pOutputFile, "%d\t%s\t%s\n", dwProcessID, szProcessName, szUsername );
+
+							fclose( pOutputFile );
+						}
+
+						CloseHandle( hToken );
+					}
+					else
+					{
+						sprintf( szErrorMsg, "ERROR! Cannot open process token for process ID %d.\n", dwProcessID );
+
+						WriteToErrorLog( szErrorMsg );
+					}
+				}
+				else
+				{
+					sprintf( szErrorMsg, "ERROR! Cannot open process ID %d.\n", dwProcessID );
+
+					WriteToErrorLog( szErrorMsg );
+				}
+			}
+			while ( Process32Next( hProcessSnap, &pe32 ) );
+		}
+		else
+		{
+			sprintf( szErrorMsg, "ERROR! Cannot retrieve process information.\n" );
+
+			WriteToErrorLog( szErrorMsg );
+		}
+
+		CloseHandle( hProcessSnap );
+	}
+	else
+	{
+		sprintf( szErrorMsg, "ERROR! Cannot take process snapshot.\n" );
+
+		WriteToErrorLog( szErrorMsg );
+	}
+}
+
+VOID GetTokenUserInformation( HANDLE *hToken, CHAR szUsername[], DWORD *dwPID )
+{
+	DWORD               dwSize;
+	TOKEN_USER            *pTU;
+	DWORD        dwBytesNeeded;
+	DWORD        cbAccountName;
+	DWORD         cbDomainName;
+	CHAR         szAccountName[ 128 ];
+	CHAR          szDomainName[ 128 ];
+        SID_NAME_USE         peUse;
+	CHAR            szErrorMsg[ 128 ];
+
+	dwSize = 4096;
+
+	pTU = (TOKEN_USER *)malloc( dwSize );
+
+	if ( GetTokenInformation( *hToken, TokenUser, pTU, dwSize, &dwBytesNeeded ) )
+	{
+		cbAccountName = sizeof( szAccountName );
+		cbDomainName  = sizeof( szDomainName );
+
+		if ( LookupAccountSid( NULL, pTU->User.Sid, szAccountName, &cbAccountName, szDomainName, &cbDomainName, &peUse ) )
+		{
+			sprintf( szUsername, "%s\\%s", szDomainName, szAccountName );
+		}
+		else
+		{
+			sprintf( szErrorMsg, "ERROR! Cannot lookup account SID for process ID %d.\n", *dwPID );
+
+			WriteToErrorLog( szErrorMsg );
+		}
+	}
+	else
+	{
+		sprintf( szErrorMsg, "ERROR! Cannot read token information for process ID %d.\n", *dwPID );
+
+		WriteToErrorLog( szErrorMsg );
+	}
+}
+
+VOID WriteToErrorLog( CHAR szErrorMsg[] )
+{
+	FILE *pOutputFile;
+
+	pOutputFile = fopen( "ErrorLog.txt", "r" );
+
+	if ( pOutputFile != NULL )
+	{
+		fclose( pOutputFile );
+	}
+	else
+	{
+		pOutputFile = fopen( "ErrorLog.txt", "w" );
+
+		if ( pOutputFile != NULL )
+		{
+			fclose( pOutputFile );
+		}
+	}
+
+	pOutputFile = fopen( "ErrorLog.txt", "a+" );
+
+	if ( pOutputFile != NULL )
+	{
+		fprintf( pOutputFile, "%s", szErrorMsg );
+
+		fclose( pOutputFile );
+	}
+}
+
+// Written by Reed Arvin | reedarvin@gmail.com

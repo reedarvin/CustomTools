@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Godzilla_vc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\REEDAR~1\LOCALS~1\Temp\RSP11D.tmp" with contents
+[
+/nologo /MT /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Godzilla_vc.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Custom Tools\Godzilla\Source\d3des.c"
+"D:\Custom Tools\Godzilla\Source\Godzilla.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\REEDAR~1\LOCALS~1\Temp\RSP11D.tmp" 
+Creating command line "link.exe kernel32.lib user32.lib ws2_32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Godzilla_vc.pdb" /debug /machine:I386 /out:"Debug/Godzilla_vc.exe" /pdbtype:sept  ".\Debug\d3des.obj" ".\Debug\Godzilla.obj" "
+<h3>Output Window</h3>
+Compiling...
+d3des.c
+Godzilla.c
+d:\custom tools\godzilla\source\godzilla.c(65) : warning C4013: 'atoi' undefined; assuming extern returning int
+d:\custom tools\godzilla\source\godzilla.c(423) : warning C4244: 'function' : conversion from 'unsigned long ' to 'unsigned short ', possible loss of data
+d:\custom tools\godzilla\source\godzilla.c(743) : warning C4018: '<' : signed/unsigned mismatch
+d:\custom tools\godzilla\source\godzilla.c(839) : warning C4018: '<' : signed/unsigned mismatch
+d:\custom tools\godzilla\source\godzilla.c(423) : warning C4761: integral size mismatch in argument; conversion supplied
+Linking...
+
+
+
+<h3>Results</h3>
+Godzilla_vc.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

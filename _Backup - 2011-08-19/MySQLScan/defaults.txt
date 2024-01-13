@@ -1,0 +1,7 @@
+# Default MySQL user account names and passwords
+
+<blank>:<blank>
+root:<blank>
+root:root
+mysql:<blank>
+mysql:mysql

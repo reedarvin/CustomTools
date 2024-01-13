@@ -1,0 +1,1 @@
+gcc Godzilla.c d3des.c -o Godzilla.exe -lws2_32

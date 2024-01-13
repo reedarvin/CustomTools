@@ -1,0 +1,5 @@
+# MS SQL Server query strings
+
+SELECT * FROM master..syslogins
+SELECT * FROM master..sysxlogins
+SELECT * FROM master..sysdatabases
